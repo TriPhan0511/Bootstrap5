@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>02 | Equal Width</title>
+        <style>
+            .row > div {
+                background-color: #d4d2d2;
+                border: solid 1px rgb(80, 79, 79);
+                padding: 15px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Here are two grid layouts that apply to every device and viewport,
+            from xs to xxl.
+            Add any number of unit-less classes for each breakpoint you need and
+            every column will be the same width.
+         -->
+        <div class="container">
+            <div class="row">
+                <div class="col">1 of 2</div>
+                <div class="col">1 of 2</div>
+            </div>
+            <div class="row">
+                <div class="col">1 of 3</div>
+                <div class="col">1 of 3</div>
+                <div class="col">1 of 3</div>
+            </div>
+            <!-- 
+                Add any number of unit-less classes for each breakpoint you need and
+                every column will be the same width. 
+             -->
+            <div class="row">
+                <div class="col-sm">1 of 4</div>
+                <div class="col-sm">1 of 4</div>
+                <div class="col-sm">1 of 4</div>
+                <div class="col-sm">1 of 4</div>
+            </div>
+        </div>
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
