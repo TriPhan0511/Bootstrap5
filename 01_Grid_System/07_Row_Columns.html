@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>07 | Row columns</title>
+        <style>
+            .row > div {
+                background-color: #d4d2d2;
+                border: solid 1px rgb(80, 79, 79);
+                padding: 15px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Use the responsive .row-cols-* classes to quickly set the number of colums that
+            best render your content and layout.
+            Whereas normal .col-* classes apply to the individual column (e.g., .col-md-4),
+            the row columns classes are set on the parent .row as a shortcut.
+
+            With .row-cols-auto you can give the columns their natural width.
+         -->
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">One</div>
+                <div class="col">Two</div>
+                <div class="col">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+                <div class="col">Six</div>
+                <div class="col">Seven</div>
+            </div>
+
+            <div class="row row-cols-3">
+                <div class="col">One</div>
+                <div class="col">Two</div>
+                <div class="col">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+                <div class="col">Six</div>
+                <div class="col">Seven</div>
+            </div>
+
+            <div class="row row-cols-auto">
+                <div class="col">One</div>
+                <div class="col">Two</div>
+                <div class="col">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+                <div class="col">Six</div>
+                <div class="col">Seven</div>
+            </div>
+
+            <div class="row row-cols-4">
+                <div class="col">One</div>
+                <div class="col">Two</div>
+                <div class="col-6">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+                <div class="col">Six</div>
+                <div class="col">Seven</div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
