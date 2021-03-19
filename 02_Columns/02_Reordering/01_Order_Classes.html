@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>Order Classes</title>
+        <style>
+            .container {
+                border: solid 1px #ccc;
+                padding: 25px;
+            }
+
+            .row > [class^='col-'] {
+                background-color: #d4d2d2;
+                border: solid 1px rgb(80, 79, 79);
+                padding: 15px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Use .order- classesfor controlling the visual order of your content.
+            These classes are responsive, so you can set the order by breakpoint
+            (e.g., .order-1.order-md-2). Includes support for 1 through 5 across
+            all six grid tiers.
+
+            .order-1, .order-2, .order-3, .order-4, .order-5,
+            .order-first, .order-last
+         -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-sm">First in DOM, no order applied</div>
+                <div class="col-sm order-5">
+                    Second in DOM, with a larger order
+                </div>
+                <div class="col-sm order-1">
+                    Third in DOM, with an order of 1
+                </div>
+            </div>
+        </div> -->
+        <!-- ------------------------------------------------------------ -->
+
+        <!-- 
+            There are also responsive .order-first and .order-last classes that
+            change the order of an element 
+            by applying order: -1 and order: 6, respectively. These classes can also 
+            be intermixed with the numbered .order-* classes as needed.
+         -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm order-last">First in DOM, ordered last</div>
+                <div class="col-sm">Second in DOM, no ordered</div>
+                <div class="col-sm order-first">
+                    Third in DOM, ordered first
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
