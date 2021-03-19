@@ -13,28 +13,40 @@
             crossorigin="anonymous"
         />
 
-        <title>Starter</title>
+        <title>Column Wrapping</title>
         <style>
             .container {
                 border: solid 1px #ccc;
                 padding: 25px;
             }
 
-            .row > [class^='col-'] {
+            .row > div {
                 background-color: #d4d2d2;
                 border: solid 1px rgb(80, 79, 79);
                 padding: 15px 5px;
             }
-
-            /* .row > div {
-                background-color: #d4d2d2;
-                border: solid 1px rgb(80, 79, 79);
-                padding: 15px 5px;
-            } */
         </style>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <!-- 
+            If more thanjh 12 columns are placed within a single row,
+            each group of extra columns will, as one unit, wrap onto a new line.
+         -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-9">.col-9</div>
+                <div class="col-4">
+                    .col-4 <br />
+                    Since 9 + 4 = 13 &gt; 12, this 4-column-wide div will gets
+                    wrapped onto a new line as one contigunous unit.
+                </div>
+                <div class="col-6">
+                    .col-6 <br />
+                    Subsequent columns continue along the new line.
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap Bundle with Popper -->
         <script

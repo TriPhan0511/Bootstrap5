@@ -13,7 +13,7 @@
             crossorigin="anonymous"
         />
 
-        <title>Starter</title>
+        <title>Column breaks</title>
         <style>
             .container {
                 border: solid 1px #ccc;
@@ -25,16 +25,29 @@
                 border: solid 1px rgb(80, 79, 79);
                 padding: 15px 5px;
             }
-
-            /* .row > div {
-                background-color: #d4d2d2;
-                border: solid 1px rgb(80, 79, 79);
-                padding: 15px 5px;
-            } */
         </style>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <!-- 
+            Breaking columns to a new line in flexbox requires a small hack:
+            add an element with width: 100% wherever you want to wrap your
+            columns to a new line.
+            Normally this is accomplished with multiple .row(s), 
+            but not every implementation method can account for this.
+         -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+                <!-- Force next columns to break to a new line -->
+                <div class="w-100"></div>
+
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            </div>
+        </div>
 
         <!-- Bootstrap Bundle with Popper -->
         <script
