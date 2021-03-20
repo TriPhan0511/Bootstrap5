@@ -16,15 +16,18 @@
         <title>Gutters</title>
         <style>
             .container {
+                margin-bottom: 15px;
+            }
+            /* .container {
                 border: solid 1px #ccc;
                 padding: 25px;
-            }
+            } */
 
-            .row > [class^='col-'] {
+            /* .row > [class^='col-'] {
                 background-color: #d4d2d2;
                 border: solid 1px rgb(80, 79, 79);
                 padding: 15px 5px;
-            }
+            } */
         </style>
     </head>
     <body>
@@ -44,8 +47,127 @@
             2. Gutters start at 1.5rem (24px) wide. This allows us to match our grid
             to the padding and margin spacers scale.
 
-            3.  
+            3.  Gutters can be responsively adjusted.
+            Use breakpoint-specific gutter classes to modify horizontal gutters,
+            vertical gutters, and all gutters.
          -->
+
+        <!-- 
+            HORIZONTAL GUTTERS
+
+            .gx-* classes can be used to control the horizontal gutter widths.
+            The .container of .container-fluid parent may need to be adjusted if
+            larger gutters are used too to avoid unwanted overflow, using a 
+            matching padding utility.
+
+            For example, in the following example we've increased the padding
+            with .px-4
+         -->
+
+        <h3>Horizontal Gutter</h3>
+        <div class="container px-4">
+            <div class="row gx-4">
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            An alternative solution is to add a wrapper around the .row with
+            the the .overflow-hidden class:
+         -->
+        <h3>An alternative solution: using .overflow-hidden class</h3>
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            VERTCIAL GUTTERS
+
+            .gy-* classes can be used to control the vertical gutter widths.
+            Like the horizontal gutters, the vertical gutters can cause some overflow 
+            below the .row at the end of page. If this occurs, you add a wrapper
+            around .row with the .over-hidden class.
+         -->
+
+        <h3>Vertical Gutter</h3>
+        <div class="container overflow-hidden">
+            <div class="row gy-5">
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            HORIZONTAL & VERTICAL GUTTERS
+         -->
+
+        <h3>Horizontal & Vertical Gutters</h3>
+        <div class="container overflow-hidden">
+            <div class="row g-2">
+                <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        Custom column paddingh
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        Custom column paddingh
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        Custom column paddingh
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        Custom column paddingh
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            NO GUTTERS
+
+            The gutters between columns in our predefined grid classes can be
+            removed with .g-0. This removes the negative margin from .row and
+            the horizontal padding from all immediate children columns.
+         -->
+
+        <h3>No Gutters</h3>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-light">Custom column padding</div>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap Bundle with Popper -->
         <script
