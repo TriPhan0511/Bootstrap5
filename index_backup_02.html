@@ -16,18 +16,88 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css" />
 
-        <style>
-            /* .flex {
-                display: flex;
-            } */
-        </style>
-
         <title>Home | Aquarium Park</title>
     </head>
     <body>
         <!-- Main navigation -->
-        <nav>
-            <div class="container d-flex"></div>
+        <nav
+            class="navbar navbar-expand-sm navbar-dark bg-dark"
+            aria-label="Third navbar example"
+        >
+            <div class="container">
+                <a href="#" class="navbar-brand">Expand at sm</a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link disabled"
+                                tabindex="-1"
+                                aria-disabled="true"
+                                href="#"
+                                >Disabled</a
+                            >
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="dropdown03"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                href="#"
+                                >Dropdown</a
+                            >
+                            <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dropdown03"
+                            >
+                                <li>
+                                    <a href="#" class="dropdown-item">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"
+                                        >Another action</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item"
+                                        >Something else here</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form>
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                    </form>
+                </div>
+            </div>
         </nav>
 
         <!-- Detail Page -->

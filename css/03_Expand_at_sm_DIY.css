@@ -1,0 +1,72 @@
+:root {
+    --dark-color: #000;
+    --light-color: #fff;
+}
+
+/* General */
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    /* padding-bottom: 3px; */
+}
+
+a:hover {
+    color: #000;
+    /* border-bottom: 1px solid #000; */
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bg-dark {
+    /* background-color: #000; */
+    background-color: var(--dark-color);
+}
+
+.text-light {
+    color: #fff;
+}
+
+/* Main navigation */
+
+.logo-text {
+    font-size: 3rem;
+}
+
+.main-navigation > .flex {
+    height: 70px;
+    justify-content: space-between;
+}
+
+.main-navigation .flex a {
+    padding: 0 10px;
+}
+
+.main-navigation .flex div:nth-child(2) {
+    align-self: flex-end;
+}
+
+.main-navigation > .logo {
+    width: 10%;
+}
+
+.main-navigation a {
+    color: var(--light-color);
+}
+
+.main-navigation a.dropdown-item {
+    color: var(--dark-color);
+}
