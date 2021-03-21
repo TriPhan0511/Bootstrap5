@@ -1,0 +1,32 @@
+/* General */
+img {
+    width: 100%;
+}
+
+/* Floated Images */
+.fig-picture-float-left,
+.fig-picture-float-right {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.fig-picture-float-left {
+    float: left;
+    margin-right: 30px;
+}
+
+.fig-picture-float-right {
+    float: right;
+    margin-left: 30px;
+}
+
+/* Detail Page */
+/* Author */
+.author > h2:first-child {
+    text-align: center;
+}
+
+.author img {
+    border-radius: 70%;
+    margin: 20px 0;
+}
