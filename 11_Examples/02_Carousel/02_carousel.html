@@ -13,15 +13,13 @@
             crossorigin="anonymous"
         />
 
-        <title>Bootstrap 5 Carousel Slider</title>
-    </head>
-    <body>
         <!-- Custom CSS -->
         <style>
             .carousel-item {
                 height: 32rem;
                 /* height: 15rem; */
-                background: #777;
+                /* background: #777; */
+                background: #000;
                 color: #fff;
                 position: relative;
                 background-position: center;
@@ -35,10 +33,28 @@
                 right: 0;
                 padding-bottom: 50px;
             }
+
+            .overlay-image {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+            }
         </style>
 
+        <title>Bootstrap 5 Carousel Slider</title>
+    </head>
+    <body>
         <!-- Carousel -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div
+            id="myCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+        >
             <div class="carousel-indicators">
                 <button
                     type="button"
@@ -65,10 +81,15 @@
             <div class="carousel-inner">
                 <div
                     class="carousel-item active"
+                    data-bs-interval="2000"
                     style="background-image: url(./images/slide-1.jpg)"
                 >
+                    <div
+                        class="overlay-image"
+                        style="background-image: url(./images/slide-1.jpg)"
+                    ></div>
                     <div class="container">
-                        <h1>Example Headline</h1>
+                        <h1>Example Headline 1</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Ratione ab dolor vel dolorem veniam ad?
@@ -81,8 +102,13 @@
                 </div>
                 <div
                     class="carousel-item"
+                    data-bs-interval="2000"
                     style="background-image: url(./images/slide-2.jpg)"
                 >
+                    <div
+                        class="overlay-image"
+                        style="background-image: url(./images/slide-2.jpg)"
+                    ></div>
                     <div class="container">
                         <h1>Example Headline 2</h1>
                         <p>
@@ -95,7 +121,15 @@
                         >
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div
+                    class="carousel-item"
+                    data-bs-interval="2000"
+                    style="background-image: url(./images/slide-3.jpg)"
+                >
+                    <div
+                        class="overlay-image"
+                        style="background-image: url(./images/slide-3.jpg)"
+                    ></div>
                     <div class="container">
                         <h1>Example Headline 3</h1>
                         <p>
