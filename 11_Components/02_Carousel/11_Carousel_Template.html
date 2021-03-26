@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Carousel Example</title>
+        <title>Carousel Template</title>
 
         <!-- Boostrap 5 CSS Offline -->
         <link
@@ -12,42 +12,12 @@
             href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
         />
 
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="11_Carousel_Template.css" />
+
         <!-- Carousel -->
         <!-- Customzie the Carousel -->
-        <style>
-            /* Carousel base class */
-            .carousel {
-                margin-bottom: 4rem;
-            }
-
-            /* Since positioning the image, we need to help out the caption */
-            .carousel-caption {
-                bottom: 3rem;
-                z-index: 10;
-            }
-
-            /* Declare heights beacause of positioning of img element */
-            .carousel-item {
-                height: 32rem;
-            }
-
-            .carousel-item > img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                min-width: 100%;
-                height: 32rem;
-            }
-
-            /* Responsive CSS */
-            @media (min-width: 40rem) {
-                .carousel-caption p {
-                    margin-bottom: 1.25rem;
-                    font-size: 1.25rem;
-                    line-height: 1.4;
-                }
-            }
-        </style>
+        <style></style>
     </head>
     <body>
         <!-- Header -->
@@ -114,7 +84,6 @@
             class="carousel slide carousel-fade"
             data-bs-ride="carousel"
         >
-            <!-- Indicators -->
             <div class="carousel-indicators">
                 <button
                     type="button"
@@ -138,7 +107,6 @@
                 ></button>
             </div>
 
-            <!-- Sliders -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img
@@ -149,9 +117,6 @@
 
                     <div class="container">
                         <div class="carousel-caption text-start">
-                            <!-- <div
-                            class="carousel-caption text-start d-none d-md-block"
-                        > -->
                             <h3>Beautiful Marine Creatures Gallery</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -177,7 +142,6 @@
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <!-- <div class="carousel-caption d-none d-md-block"> -->
                             <h3>Must-see Places</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -203,9 +167,6 @@
 
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <!-- <div
-                            class="carousel-caption text-end d-none d-md-block"
-                        > -->
                             <h3>Fantastic Events for Kids</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
@@ -223,7 +184,6 @@
                 </div>
             </div>
 
-            <!-- Controls -->
             <button
                 type="button"
                 class="carousel-control-prev"
@@ -236,7 +196,6 @@
                 ></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-
             <button
                 type="button"
                 class="carousel-control-next"
@@ -249,6 +208,74 @@
                 ></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+        ======================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img
+                        src="images/marketing-w140-h140-01.jpg"
+                        alt="Marketing image"
+                        class="rounded-circle"
+                    />
+                    <h2>Heading</h2>
+                    <p>
+                        Some representative placeholder content for three
+                        columns of text below the carousel. This is the first
+                        column.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-secondary"
+                            >View detail &raquo;</a
+                        >
+                    </p>
+                </div>
+                <!-- /.col-lg-4-->
+
+                <div class="col-lg-4">
+                    <img
+                        src="images/marketing-w140-h140-02.jpg"
+                        alt="Marketing image"
+                        class="rounded-circle"
+                    />
+                    <h2>Heading</h2>
+                    <p>
+                        Another exciting bit of representative placeholder
+                        content. This time, we've moved on to the second column.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-secondary"
+                            >View detail &raquo;</a
+                        >
+                    </p>
+                </div>
+                <!-- /.col-lg-4-->
+
+                <div class="col-lg-4">
+                    <img
+                        src="images/marketing-w140-h140-03.jpg"
+                        alt="Marketing image"
+                        class="rounded-circle"
+                    />
+                    <h2>Heading</h2>
+                    <p>
+                        And lastly this, the third column of representative
+                        placeholder content.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-secondary"
+                            >View detail &raquo;</a
+                        >
+                    </p>
+                </div>
+                <!-- /.col-lg-4-->
+            </div>
+            <!-- /.row-->
         </div>
 
         <!-- Bootstrap 5 JS Offline -->
