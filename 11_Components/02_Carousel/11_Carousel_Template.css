@@ -44,12 +44,45 @@
     margin-left: 0.75rem;
 }
 
+/* FEATURETTES */
+.featurette-divider {
+    margin: 5rem 0; /* Space out tghe Bootstrap <hr> mores */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -0.05rem;
+}
+
+.featurette > .col-md-5 > img {
+    width: 100%;
+}
+
 /* RESPONSIVE CSS 
 --------------------------------------------------*/
-@media (min-width: 40rem) {
+@media (min-width: 40em) {
     .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
         line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 60em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .featurette.second > .col-md-7 {
+        order: 1;
     }
 }
