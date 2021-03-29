@@ -64,6 +64,7 @@
 /* RESPONSIVE CSS 
 --------------------------------------------------*/
 @media (min-width: 40em) {
+    /* Bump up size carousel content */
     .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
