@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>Bootstrap 5 | Form Controls</title>
+
+        <!-- Custom Style -->
+        <style>
+            .wrapper {
+                width: 50%;
+                margin: auto;
+                border: 1px solid #ced4da;
+                padding: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .wrapper:nth-of-type(2) > input,
+            .wrapper:nth-of-type(3) > input {
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form Constrols</h1>
+        <!-- 
+            Give textual form controls like <input>s and <textarea>s an upgrade 
+            with custom styles, sizing, focus states, and more.
+        -->
+        <div class="wrapper">
+            <h3>Example</h3>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                >
+                <input
+                    type="email"
+                    name=""
+                    id="exampleFormControlInput1"
+                    class="form-control"
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                    >Example Textarea</label
+                >
+                <textarea
+                    name=""
+                    id="exampleFormControlTextarea1"
+                    class="form-control"
+                    rows="3"
+                ></textarea>
+            </div>
+        </div>
+
+        <!-- 
+            Sizing
+            Set heights using classes like .form-control-lg and .form-control-sm
+         -->
+        <div class="wrapper">
+            <h3>Sizing</h3>
+            <input
+                type="text"
+                id="input1"
+                class="form-control form-control-lg"
+                placeholder=".form-control-lg"
+                aria-label=".form-control-lg example"
+            />
+
+            <input
+                type="text"
+                id="input2"
+                class="form-control"
+                placeholder="Default input"
+                aria-label="default input example"
+            />
+
+            <input
+                type="text"
+                id="input3"
+                class="form-control form-control-sm"
+                placeholder=".form-control-sm"
+                aria-label=".form-control-sm example"
+            />
+        </div>
+
+        <!--
+            Disabled 
+            Add the disabled boolean attribute on an input to give it 
+            a grayed out appearance and remove pointer events.
+        -->
+        <div class="wrapper">
+            <h3>Disabled</h3>
+            <input
+                type="text"
+                name=""
+                id="input4"
+                class="form-control"
+                placeholder="Disabled input"
+                disabled
+                aria-label="Disabled input example"
+            />
+
+            <input
+                type="text"
+                name=""
+                id="input5"
+                class="form-control"
+                placeholder="Disabled readonly input"
+                disabled
+                readonly
+                aria-label="Disabled input example"
+            />
+        </div>
+
+        <!-- 
+            Readonly
+            Add the readonly boolean attribute on an input to prevent modification
+            of the input's value. 
+            Read-only inputs appear lighter (just like disabled inputs),
+            but retain the standard cursor.
+         -->
+        <div class="wrapper">
+            <h3>Readonly</h3>
+            <input
+                type="text"
+                name=""
+                id="input6"
+                class="form-control"
+                placeholder="Read-only input"
+                readonly
+            />
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
