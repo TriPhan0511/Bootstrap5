@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>Bootstrap 5 | Card | Horizontal</title>
+
+        <!-- Custom CSS -->
+        <style>
+            /* .card {
+                width: 20rem;
+                margin: auto;
+            } */
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Using a combination of grid and utility classes, cards can be made
+            horizontal in a mobile-friendly and responsive way.
+
+            In the example below, we remove the grid gutters with .g-0
+            and use .col-md-* classes to make card horizontal at the md breakpoint.
+            Futher adjustment may be needed depending on you card content.
+         -->
+
+        <h3>Horizontal</h3>
+
+        <div class="card" style="max-width: 540px">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img
+                        src="images/Children_Activities_01.jpg"
+                        alt="Children are playig soccer"
+                        class="w-100 h-100"
+                    />
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content
+                            is a little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"
+                                >Last updated 3 mins ago</small
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
