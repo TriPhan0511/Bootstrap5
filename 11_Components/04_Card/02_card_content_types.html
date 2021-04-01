@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <title>Boostrap 5 | Cards - Content Types</title>
+
+        <!-- Custom CSS -->
+        <style>
+            .container > * {
+                margin-bottom: 1rem;
+            }
+
+            .container > .card {
+                width: 18rem;
+            }
+
+            .container > .another-example {
+                width: 40rem;
+                margin: auto;
+                margin-bottom: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Cards support a wide of variety of content, including images, text,
+            list groups, links, and more.
+         -->
+        <!-- --------------------------------------------------------------- -->
+
+        <div class="container">
+            <!-- 
+                Body 
+                The building block of a card is the .card-body.
+                Use it whenever you need a padded section within a card.
+            -->
+            <h3>Card body (.card-body)</h3>
+            <div class="card">
+                <div class="card-body">
+                    This is some text within a card body.
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <!-- 
+                Titles, text and links
+             -->
+            <h3>
+                Titles, text and links (.card-title, .card-text, .card-link)
+            </h3>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <!-- 
+                Images
+                .card-img-top places an image on the top of the card.
+                With .card-text, text can be added to the card. Text within
+                .card-text can also be styled with the standard HTML tags
+             -->
+            <h3>Images (.card-img-top)</h3>
+            <div class="card">
+                <img
+                    src="images/Kids_Event_01.jpg"
+                    alt="Kids Kids_Event_01"
+                    class="card-img-top"
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Festival Of Colors</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Numquam doloremque error animi, minus architecto
+                        neque voluptates nihil impedit cum enim?
+                    </p>
+                    <a href="#" class="btn btn-primary">Join Us</a>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <!-- 
+                List groups
+                Create lists of content in a card with a flush list group.
+             -->
+            <h3>
+                List Group (.list-group, .list-group-flush, .list-group-item)
+            </h3>
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <h3>Card Header and List group (.card-header and .list-group)</h3>
+            <div class="card">
+                <div class="card-header">Featured</div>
+                <ul class="list-group list-group-flush">
+                    <!-- <ul class="list-group"> -->
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <h3>
+                Card Footer and List Group (.card-footer and .card-list-group)
+            </h3>
+            <div class="card">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <div class="card-footer">Card footer</div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <h3>Kitchen Sink</h3>
+            <div class="card">
+                <img
+                    src="images/Fireworks_event.jpg"
+                    alt="Fireworks"
+                    class="card-img-top"
+                />
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Neque nulla et exercitationem vitae adipisci aperiam
+                        incidunt quia error sint reiciendis.
+                    </p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+
+                <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <!-- 
+                Header and Footer
+                Add an optional header and/or footer within a card
+             -->
+            <h3>Header and Footer (.card-header and .card-footer)</h3>
+            <h4>Header(.card-header)</h4>
+            <div class="card">
+                <div class="card-header">Featured</div>
+                <div class="card-body">
+                    <h5 class="card-title">Speacial title treatment</h5>
+                    <p class="card-text">
+                        With supporting text belows as a natural lead-in to
+                        additional content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <!-- 
+                Card headers can be styled by adding .card-header to <h*> elements.
+             -->
+            <h4>h5.card-hearder</h4>
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Dolorem natus laborum at sint placeat adipisci est
+                        incidunt sed pariatur atque.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <h4>Quote</h4>
+            <div class="card">
+                <div class="card-header">Quote</div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>
+                            A well-known quote, contained in a blockquote
+                            element.
+                        </p>
+                        <footer class="blockquote-footer">
+                            Someone famous in
+                            <cite title="Source Title">Source Title</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------- -->
+
+            <h3 class="text-center">Another Example</h3>
+            <div class="card another-example text-center">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">
+                        With supporting text below as a natual lead-in to
+                        additional content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">2 days ago</div>
+            </div>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
