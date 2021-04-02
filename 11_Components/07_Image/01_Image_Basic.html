@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <!-- Custom CSS -->
+        <style>
+            .wrapper {
+                width: 30rem;
+                margin-bottom: 3rem;
+            }
+
+            .wrapper_2 {
+                width: 40rem;
+                margin: auto;
+                margin-bottom: 3rem;
+                border: 1px solid rgb(180, 176, 176);
+                padding: 1rem;
+            }
+
+            /* clearfix: containing floats */
+            .group::before,
+            .group::after {
+                content: '';
+                display: table;
+            }
+
+            .group::after {
+                clear: both;
+            }
+
+            .group {
+                clear: both;
+                zoom: 1;
+            }
+
+            /* End of clearfix */
+        </style>
+
+        <title>Bootstrap 5 | Image</title>
+    </head>
+    <body>
+        <h3>Responsive images</h3>
+        <!-- 
+            Images in Bootstrap are made responsive with .img-fluid.
+            This applies max-width: 100%; and height: auto; to the 
+            image so that it scales with the parent element.
+         -->
+        <div class="wrapper">
+            <img
+                src="images/Children_Activities_03.jpg"
+                alt="Children activities"
+                class="img-fluid"
+            />
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        <h3>Image thumbnails</h3>
+        <!-- 
+            In addition to our border-radius utilities, you can use .img-thumbnail
+            to give an image a rounded 1px border appearance.
+         -->
+        <div class="wrapper">
+            <img
+                src="images/Children_Activities_04.jpg"
+                alt="Children activities"
+                class="img-thumbnail"
+            />
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        <h3>Aligning images (float to left and right)</h3>
+        <!-- 
+            Align images with the helper float classes or text alignment classes.
+            block-level images can be centered using the .mx-auto margin utility class.
+         -->
+
+        <div class="wrapper_2 group">
+            <img
+                src="images/Children_Activities_03_w200.jpg"
+                alt="children activities"
+                class="rounded float-start"
+            />
+
+            <img
+                src="images/Children_Activities_03_w200.jpg"
+                alt="children activities"
+                class="rounded float-end"
+            />
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        <h3>Centered image: Using .d-block and .mx-auto within img element</h3>
+        <div class="wrapper_2">
+            <img
+                src="images/Children_Activities_03_w200.jpg"
+                alt=""
+                class="rounded d-block mx-auto"
+            />
+        </div>
+        <!-- -------------------------------------------------------- -->
+
+        <h3>Centered image: Using .text-center within image wrapper</h3>
+        <div class="wrapper_2 text-center">
+            <img
+                src="images/Children_Activities_03_w200.jpg"
+                alt="children activities"
+                class="rounded"
+            />
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
