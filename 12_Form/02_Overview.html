@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
 
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-            crossorigin="anonymous"
-        />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
-        <title>Bootstrap 5 | Form</title>
-    </head>
-    <body>
-        <h2>Form Text</h2>
-        <!-- 
+    <title>Bootstrap 5 | Form</title>
+  </head>
+  <body>
+    <h2>Form Text</h2>
+    <!-- 
             Block-level or Inline-level form text can be created using .form-text
            
             Associating form text with form controls:
@@ -27,62 +30,75 @@
             announce this form text when the user focuses or enters the control.
          -->
 
-        <h3>Block-level text</h3>
-        <label for="inputPassword5" class="form-label">Password</label>
-        <input
-            type="password"
-            id="inputPassword5"
-            class="form-control"
-            aria-describedby="passwordHelpBlock"
-        />
-        <div id="passwordHelpBlock" class="form-text">
-            Your password must be 8-20 characters long, contain letters and
-            numbers, and must not contain spaces, special characters, or emoji.
-        </div>
+    <h3>Block-level text</h3>
+    <label for="inputPassword5" class="form-label"
+      >Password</label
+    >
+    <input
+      type="password"
+      id="inputPassword5"
+      class="form-control"
+      aria-describedby="passwordHelpBlock"
+    />
+    <div id="passwordHelpBlock" class="form-text">
+      Your password must be 8-20 characters long,
+      contain letters and numbers, and must not
+      contain spaces, special characters, or
+      emoji.
+    </div>
+    <!-- ------------------------------------------------------------------------------------- -->
 
-        <h3>Inline-level text</h3>
-        <!-- 
+    <h3>Inline-level text</h3>
+    <!-- 
             Inline text can use any typical inline HTML element (be it a <span>, <small>
             or something else) with nothing more than the .form-text class.
          -->
-        <div class="row g-3 aligns-item-center">
-            <div class="col-auto">
-                <label for="inputPassword6" class="form-label">Password</label>
-            </div>
-            <div class="col-auto">
-                <input
-                    type="password"
-                    id="inputPassword6"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                />
-            </div>
-            <div class="col-auto">
-                <span id="passwordHelpInline" class="form-text"
-                    >Must be 8-20 charaters long.</span
-                >
-            </div>
-        </div>
+    <div class="row g-3 aligns-item-center">
+      <div class="col-auto">
+        <label
+          for="inputPassword6"
+          class="form-label"
+          >Password</label
+        >
+      </div>
+      <div class="col-auto">
+        <input
+          type="password"
+          id="inputPassword6"
+          class="form-control"
+          aria-describedby="passwordHelpInline"
+        />
+      </div>
+      <div class="col-auto">
+        <span
+          id="passwordHelpInline"
+          class="form-text"
+          >Must be 8-20 charaters long.</span
+        >
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------- -->
 
-        <h2>Disabled forms</h2>
-        <!-- 
+    <h2>Disabled forms</h2>
+    <!-- 
             Add the diabled boolean attribute on an input to prevent user interactions and
             make it appear lighter.
          -->
-        <input
-            type="text"
-            id="disabledInput"
-            class="form-control"
-            placeholder="Disabled input here..."
-            disabled
-        />
-        <hr />
+    <input
+      type="text"
+      id="disabledInput"
+      class="form-control"
+      placeholder="Disabled input here..."
+      disabled
+    />
+    <hr />
+    <!-- ------------------------------------------------------------------------------------- -->
 
-        <!-- 
+    <!-- 
             Add the diabled attribute to a <fieldset> to disable all the controls within.
             Browsers treat all native form controls (<input>, <select> and
             <button> elements) inside a <fieldset disabled> as disabled, 
-            preveting both keyboard and mouse interactions on them.
+            preventing both keyboard and mouse interactions on them.
 
             However, if your form also includes custom button-like elements such as
             <a class="btn btn-primary">...</a>, these will only be given a style of 
@@ -92,49 +108,63 @@
             aria-disabled="disabled" to signal their state to assistive technologies.
          -->
 
-        <form>
-            <fieldset disabled>
-                <legend>Disabled fieldset Example</legend>
-                <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label"
-                        >Disabled Input</label
-                    >
-                    <input
-                        type="text"
-                        id="disabledTextInput"
-                        class="form-control"
-                    />
-                </div>
+    <form>
+      <fieldset disabled>
+        <legend>Disabled fieldset Example</legend>
+        <div class="mb-3">
+          <label
+            for="disabledTextInput"
+            class="form-label"
+            >Disabled Input</label
+          >
+          <input
+            type="text"
+            id="disabledTextInput"
+            class="form-control"
+          />
+        </div>
 
-                <div class="mb-3">
-                    <label for="disabledSelect" class="form-label"
-                        >Disabled select menu</label
-                    >
-                    <select id="disabledSelect" class="form-select">
-                        <option>Disaled select</option>
-                    </select>
-                </div>
+        <div class="mb-3">
+          <label
+            for="disabledSelect"
+            class="form-label"
+            >Disabled select menu</label
+          >
+          <select
+            id="disabledSelect"
+            class="form-select"
+          >
+            <option>Disaled select</option>
+          </select>
+        </div>
 
-                <div class="mb-3">
-                    <input
-                        type="checkbox"
-                        id="disabledCheck"
-                        class="form-check-input"
-                    />
-                    <label for="disabledCheck" class="form-check-label"
-                        >Can't check this</label
-                    >
-                </div>
+        <div class="mb-3">
+          <input
+            type="checkbox"
+            id="disabledCheck"
+            class="form-check-input"
+          />
+          <label
+            for="disabledCheck"
+            class="form-check-label"
+            >Can't check this</label
+          >
+        </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
-        </form>
+        <button
+          type="submit"
+          class="btn btn-primary"
+        >
+          Submit
+        </button>
+      </fieldset>
+    </form>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

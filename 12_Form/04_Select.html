@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <!-- Custom CSS -->
+        <style>
+            h1,
+            h3,
+            p {
+                text-align: center;
+            }
+
+            .wrapper {
+                width: 70%;
+                margin: auto;
+                margin-bottom: 2rem;
+                border: 1px solid
+                    rgb(187, 182, 182);
+                padding: 2rem;
+            }
+        </style>
+
+        <title>Bootstrap 5 | Select</title>
+    </head>
+    <body>
+        <h1>Select</h1>
+        <p>
+            Customize the native select elemants
+            with custom CSS that changes the
+            element's initial appearance
+        </p>
+
+        <h3>Default</h3>
+        <p>
+            Custom select menus need only a custom
+            class, .form-select to trigger the
+            custom styles. Custom styles are
+            limited to the select element's
+            initial appearance and cannot modify
+            the options due to browser
+            limitations.
+        </p>
+        <div class="wrapper">
+            <select
+                class="form-select"
+                aria-label="Default select example"
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <hr />
+        <!-- ---------------------------------------------------------------- -->
+
+        <h3>Sizing</h3>
+        <p>
+            You may also choose from small and
+            large custom selects to match our
+            similarly sized text inputs
+        </p>
+        <div class="wrapper">
+            <select
+                aria-label=".form-select-lg "
+                class="form-select form-select-lg"
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <!-- ---------------------------------------------------------------- -->
+
+            <select
+                aria-label=".form-select-sm"
+                class="form-select form-select-sm mt-3"
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <hr />
+        <!-- ---------------------------------------------------------------- -->
+
+        <p>
+            The multiple attribute is also
+            supported:
+        </p>
+        <div class="wrapper">
+            <select
+                class="form-select"
+                aria-label="multiple select example"
+                multiple
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <hr />
+        <!-- ---------------------------------------------------------------- -->
+
+        <p>As is the size attribute</p>
+        <div class="wrapper">
+            <select
+                class="form-select"
+                size="3"
+                aria-label="size 3 select example"
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <hr />
+        <!-- ---------------------------------------------------------------- -->
+
+        <h3>Disabled</h3>
+        <div class="wrapper">
+            <select
+                class="form-select"
+                aria-label="disabled select example"
+                disabled
+            >
+                <option selected>
+                    Open this select menu
+                </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
