@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap 5 CSS OFFLINE -->
+    <link rel="stylesheet" href="../../bootstrap-5.1.1-dist/css/bootstrap.min.css" />
+
+    <!-- Custom styles -->
+
+    <!-- Containing floats -->
+    <style>
+      .floating-group:before,
+      .floating-group:after {
+        content: '';
+        display: table;
+      }
+      .floating-group:after {
+        clear: both;
+      }
+      .floating-group {
+        clear: both;
+      }
+    </style>
+
+    <title>Images</title>
+  </head>
+  <body>
+    <h1>Images</h1>
+
+    <h2>Responsive images</h2>
+    <p>
+      Images in Bootstrap are made responsive with <em>.img-fluid</em>. This applies max-width:
+      100%; and height: auto; to the image so that it scales with the parent element.
+    </p>
+
+    <div style="width: 300px">
+      <img src="images/Family_Camping.jpg" alt="Family_Camping" class="img-fluid" />
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <h2 class="mt-5">Image thumbnails</h2>
+    <p>
+      In addition to our border-radius, you can use <em>.img-thumbnail</em> to give an image a
+      rounded 1px border appearance.
+    </p>
+    <div style="width: 300px">
+      <img class="img-thumbnail" src="images/Festival_of_Colors.jpg" alt="Festival_of_Colors" />
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <h2 class="mt-5">Aligning images</h2>
+    <p>
+      Aligning images with the helper float classes (<em>.float-start, .float-end, float-none...</em
+      >) or text alignment classes (<em>.text-start, .text-end, .text-center, ...</em>). block-level
+      images (using <em>.d-block</em> utility class) can be centered using the
+      <em>.mx-auto</em> margin utility class.
+    </p>
+
+    <div class="container floating-group border p-3 mt-5">
+      <img
+        style="max-width: 30%; height: auto"
+        class="float-start rounded"
+        src="images/Fireworks_event.jpg"
+        alt="Fireworks_event"
+      />
+      <img
+        style="max-width: 30%; height: auto"
+        class="float-end rounded"
+        src="images/Go_Kayaking.jpg"
+        alt="Go_Kayaking"
+      />
+    </div>
+
+    <div class="container border p-3 mt-5">
+      <div class="text-center">
+        <img
+          src="images/Festival_of_Colors.jpg"
+          alt="Festival_of_Colors"
+          style="max-width: 30%"
+          class="rounded"
+        />
+      </div>
+    </div>
+
+    <div class="container border p-3 mt-5">
+      <img
+        src="images/Kites.jpg"
+        alt="Kites"
+        style="max-width: 30%"
+        class="rounded d-block mx-auto"
+      />
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <h2 class="mt-5">Circle image</h2>
+    <p>
+      If you want to make a circle image, you have to use an equal image (width = height) and
+      <em>.rounded-circle</em> class.
+    </p>
+
+    <div class="container border p-3 mt-5">
+      <img
+        src="images/Image_Equal_Width_Height_2.jpg"
+        alt="An equal image"
+        class="rounded-circle"
+        style="max-width: 30%; height: auto"
+      />
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+    <h2 class="mt-5">Example: Biography</h2>
+
+    <div class="container border p-3 mt-5">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <img
+            src="images/Image_Equal_Width_Height_2.jpg"
+            alt="An equal image"
+            class="rounded-circle"
+            style="max-width: 80%"
+          />
+        </div>
+        <div class="col-md-7">
+          <h3 class="text-center mt-3">Tri Phan</h3>
+          <ul class="ps-5 list-unstyled">
+            <li>Position: Developer</li>
+            <li>Front-end skill: HTML, CSS, Vanilla Javascript</li>
+            <li>Back-end skill: Node.js, Java, Python</li>
+            <li>Foreign language: English (Toeic 800)</li>
+            <li>Cellphone: 0905 844 261</li>
+            <li>Email: phanphutri@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 50vh"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+     -->
+    <!-- Bootstrap 5 JS OFFLINE -->
+    <script src="../../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

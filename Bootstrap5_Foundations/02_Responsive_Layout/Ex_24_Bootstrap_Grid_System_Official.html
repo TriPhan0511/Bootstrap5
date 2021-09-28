@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap 5 CSS OFFLINE -->
+    <link rel="stylesheet" href="../../bootstrap-5.1.1-dist/css/bootstrap.min.css" />
+
+    <title>Bootstrap Grid System</title>
+  </head>
+  <body>
+    <h1>Bootstrap Grid System</h1>
+    <p>
+      Bootstrap's grid system uses a series of containers, rows, and columns to layout and align
+      content. It's built with flexbox and is fully responsive
+    </p>
+
+    <h2>Example</h2>
+    <p>
+      Creates three equal-width column across all devices and viewports using our predefined grid
+      classes. Those columns are centered in the page with the parent <em>.container</em> class.
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col border">Colum</div>
+        <div class="col border">Colum</div>
+        <div class="col border">Colum</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h2 class="mt-3">How it works</h2>
+    <p>Breaking it down, here's how the grid system comes together:</p>
+    <ul>
+      <li>
+        <strong>Our grid support</strong> six responsive breakpoints. Breakpoints are based on
+        min-width media queries, meaning they affect that breakpoint and all those above it (e.g.,
+        <em>.col-sm-4</em> applies to sm, md, lg, xl, and xxl). This means you can control the
+        container and column sizing and behavior by each breakpoint.
+      </li>
+      <li>
+        <strong>Containers center and horizontally pad your content.</strong> Use the
+        <em>.container</em> for a responsive pixel width, <em>.container-fluid</em> for width: 100%
+        across all viewport and devices, or a responsive container (e.g., <em>.container-md</em>)
+        for a combination of fluid and pixel widths.
+      </li>
+      <li>
+        <strong>Rows are wrapper for columns.</strong> Each column has horizontal padding (called a
+        gutter) for controlling the space between them. This padding is then counteracted on the
+        rows with negative margins to ensure the content in you columns is visually aligned down the
+        left side. Rows also support modifier classes (<em>.row-cols-*</em>) to uniformly apply
+        column sizing and gutter classes (<em>.gx-*, .gy-*</em>) to change the spacing of your
+        content.
+      </li>
+      <li>
+        <strong>Columns are incredibly flexible.</strong> There are 12 template columns available
+        per row, allowing you to create different combinations of elements that span any number of
+        columns. Column classes indicate the number of template columns to span (e.g.,
+        <em>.col-4</em> spans four). widths are set in percentages so you always have the same
+        relative sizing.
+      </li>
+      <li>
+        <strong>Gutters are also responsive and customizable.</strong> Gutter classes are available
+        across all breakpoints, with all the same size as our margin and padding spacing. Change
+        horizontal gutters with <em>.gx-*</em> classes, vertical gutters with <em>.gy-*</em>, or all
+        gutters with <em>.g-*</em> classes. <em>.g-0</em> is also available to remove gutters.
+      </li>
+    </ul>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h2>Grid options</h2>
+    <p>
+      Bootstrap's grid system can adapt across all six default breakpoints, and any breakpoints you
+      customize. The six default grid tiers are as follow:
+    </p>
+    <ul>
+      <li>Extra small (xs)</li>
+      <li>Small (sm)</li>
+      <li>Medium (md)</li>
+      <li>Large (lg)</li>
+      <li>Extra large (xl)</li>
+      <li>Extra extra large (xxl)</li>
+    </ul>
+    <p>
+      As noted above, each of these breakpoints have their own container, unique class prefix, and
+      modifiers. Here's how the grid changes across these breakpoints:
+    </p>
+    <table class="table mb-4">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">
+            xs<br />
+            <span class="fw-normal">&lt;576px</span>
+          </th>
+          <th scope="col">
+            sm<br />
+            <span class="fw-normal">&ge;576px</span>
+          </th>
+          <th scope="col">
+            md<br />
+            <span class="fw-normal">&ge;768px</span>
+          </th>
+          <th scope="col">
+            lg<br />
+            <span class="fw-normal">&ge;992px</span>
+          </th>
+          <th scope="col">
+            xl<br />
+            <span class="fw-normal">&ge;1200px</span>
+          </th>
+          <th scope="col">
+            xxl<br />
+            <span class="fw-normal">&ge;1400px</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">
+            Container <code class="fw-normal">max-width</code>
+          </th>
+          <td>None (auto)</td>
+          <td>540px</td>
+          <td>720px</td>
+          <td>960px</td>
+          <td>1140px</td>
+          <td>1320px</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Class prefix</th>
+          <td><code>.col-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+          <td><code>.col-xl-</code></td>
+          <td><code>.col-xxl-</code></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"># of columns</th>
+          <td colspan="6">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Gutter width</th>
+          <td colspan="6">1.5rem (.75rem on left and right)</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Custom gutters</th>
+          <td colspan="6"><a href="/docs/5.0/layout/gutters/">Yes</a></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Nestable</th>
+          <td colspan="6"><a href="#nesting">Yes</a></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Column ordering</th>
+          <td colspan="6"><a href="/docs/5.0/layout/columns/#reordering">Yes</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h2>Auto-layout columns</h2>
+    <p>
+      Utilize breakpoint-specific column classes for easy column sizing without an explicit numbered
+      class like <em>.col-sm-6</em>.
+    </p>
+
+    <h3>Equal-width</h3>
+    <p>
+      For example, here are two grid layouts that apply to every device and report, from
+      <em>xs</em> to <em>xxl</em>. Add any number of unit-less classes (e.g., <em>.col-sm</em>) for
+      each breakpoint you need and every column will be the same width.
+    </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col border">1 of 2</div>
+        <div class="col border">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col border">1 of 3</div>
+        <div class="col border">2 of 3</div>
+        <div class="col border">3 of 3</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h3>Setting one column width</h3>
+    <p>
+      Auto-layout for flexbox grid columns also means you can set the width of one column and have
+      the sibling columns automatically resize around it. You may use predefined grid classes (as
+      shown below), grid mixinsm or inline width. Note that the other columns will resize no matter
+      the width of the center column.
+    </p>
+
+    <div class="container border p-4">
+      <div class="row">
+        <div class="col border">1 of 3</div>
+        <div class="col-6 border">2 of 3 (wider)</div>
+        <div class="col border">3 of 3</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col border">1 of 3</div>
+        <div class="col-5 border">1 of 3 (wider)</div>
+        <div class="col border">3 of 3</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h3>Variable width content</h3>
+    <p>
+      Use <em>col-{breakpoint}-auto</em> classes to size columns based on the natural width of their
+      content.
+    </p>
+
+    <div class="container p-4 border">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2 border">1 of 3</div>
+        <div class="col-md-auto border">Variable width content</div>
+        <div class="col col-lg-2 border">3 of 3</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col border">1 of 3</div>
+        <div class="col-md-auto border">Variable width content</div>
+        <div class="col col-lg-2 border">3 of 3</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h2>Responsive classes</h2>
+    <p>
+      Bootstrap's grid includes six tiers of predefined classes for building complex reponsive
+      layouts. Customize the size of your columns on extra small, small, medium, large, or extra
+      large devices however you see fit.
+    </p>
+
+    <h3>All breakpoints</h3>
+    <p>
+      For grids that are same from the smallest of devices to the largest, use the <em>.col</em> and
+      <em>.col-*</em> classes.Specify a numbered class when you need a particular sized column;
+      otherwise, feel free to stick to <em>.col</em>
+    </p>
+    <div class="container border p-4">
+      <div class="row">
+        <div class="col border p-2">col</div>
+        <div class="col border p-2">col</div>
+        <div class="col border p-2">col</div>
+        <div class="col border p-2">col</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-8 border p-2">col-8</div>
+        <div class="col-4 border p-2">col-4</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h3>Stacked to horizontal</h3>
+    <p>
+      Using a single set of <em>.col-sm-*</em> classes, you can create a basic grid system that
+      starts out stacked and becomes horizontal at the small breakpoint (sm).
+    </p>
+
+    <div class="container border p-4">
+      <div class="row">
+        <div class="col-sm-8 border p-2">col-sm-8</div>
+        <div class="col-sm-4 border p-2">col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm border p-2">col-sm</div>
+        <div class="col-sm border p-2">col-sm</div>
+        <div class="col-sm border p-2">col-sm</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h3>Mix and match</h3>
+    <p>
+      Don't want your columns to simply stack in some grid tiers? Use a combination of different
+      classes for each tier as needed.
+    </p>
+
+    <div class="container border p-4">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-8 border p-2 bg-light">.col-md-8</div>
+        <div class="col-6 col-md-4 border p-2 bg-light">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row mt-3">
+        <div class="col-6 col-md-4 border p-2 bg-light">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border p-2 bg-light">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4 border p-2 bg-light">.col-6 .col-md-4</div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row mt-3">
+        <div class="col-6 border p-2 bg-light">.col-6</div>
+        <div class="col-6 border p-2 bg-light">.col-6</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h3>Row columns</h3>
+    <p>
+      Use the responsive <em>.row-cols-*</em> classes to quickly set the number of columns that best
+      render your content and layout. Whereas normal <em>.col-*</em> apply to the individual columns
+      (e.g., <em>.col-md-4</em>), the row column classes are set on the parent <em>.row</em> as a
+      default for contained column. With <em>.row-cols-auto</em> you can give the columns their
+      natural width.
+    </p>
+    <p>
+      Use these row columns classes to quickly create basic grid layouts or to control your card
+      layouts and override when needed at the column level.
+    </p>
+
+    <div class="container border p-4">
+      <div class="row row-cols-2">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-3">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-auto">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column Wider Wider</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-4">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-4">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col-6 border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <div class="container border p-4 mt-3">
+      <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+        <div class="col-4 col-lg-2 border p-2 bg-light">Column</div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h2>Nesting</h2>
+    <p>
+      To nest your content with the default grid, add a new <em>.row</em> and set of
+      <em>.col-sm-*</em> columns within an existing <em>.col-sm-*</em> column. Nested rows should
+      include a set of columns that add up to 12 or fewer (it is not required that you use all 12
+      available columns.)
+    </p>
+    <div class="container border p-4 mt-3">
+      <div class="row">
+        <div class="col-sm-3 border bg-light p-3">Level 1: .col-sm-3</div>
+        <div class="col-sm-9 border bg-light p-3">
+          <div class="row">
+            <div class="col-8 col-sm-6 border">Level 2: .col-8 .col-sm-6</div>
+            <div class="col-4 col-sm-6 border">Level 2: .col-4 .col-sm-6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 50vh"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+     -->
+    <!-- Bootstrap 5 JS OFFLINE -->
+    <script src="../../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

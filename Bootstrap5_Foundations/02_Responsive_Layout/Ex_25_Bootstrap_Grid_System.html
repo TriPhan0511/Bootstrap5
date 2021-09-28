@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap 5 CSS OFFLINE -->
+    <link rel="stylesheet" href="../../bootstrap-5.1.1-dist/css/bootstrap.min.css" />
+
+    <title>Bootstrap Grid System</title>
+  </head>
+  <body>
+    <h1 class="display-1">Bootstrap Grid System</h1>
+    <p>
+      The Bootstrap uses a grid system to create content layouts. A grid system uses rows and
+      columns just as a table would.
+    </p>
+    <p>
+      Unlike a table, you have a system where you can create as many rows as you want, but are
+      limited to twelve columns.
+    </p>
+    <p>
+      To create a row, we the the <em>.row</em> class, and place it inside a
+      <em>.container</em> class.
+    </p>
+    <p>
+      The row acts as a container for a row of content. If you wish to have content that spans the
+      width of the container, simply use a row, and place content within it.
+    </p>
+
+    <div class="container">
+      <div class="row border"><p>This is a row</p></div>
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <p>
+      If you wish to have <strong>several</strong> pieces of content side by side in the same row,
+      use the <em>.col</em> class.
+    </p>
+    <p><em>.col</em> class will divide a row to twelve times</p>
+    <p>Let's start with a simple two column split.</p>
+
+    <div class="container">
+      <h2>This is the container</h2>
+      <div class="row border">
+        <h3>This is the row</h3>
+        <div class="col border"><h4>This is the first column.</h4></div>
+        <div class="col border"><h4>This is the second column.</h4></div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+     -->
+    <!-- Bootstrap 5 JS OFFLINE -->
+    <script src="../../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap 5 CSS OFFLINE -->
+    <link rel="stylesheet" href="../../bootstrap-5.1.1-dist/css/bootstrap.min.css" />
+
+    <title>Buttons</title>
+  </head>
+  <body>
+    <h1 class="display-1">Buttons</h1>
+    <p>
+      Buttons are a very common UI element of Bootstrap, and their style can be used on hyperlinks,
+      forms, diaglog boxes and more.
+    </p>
+    <p>
+      Buttons can be created from multiple elements, including <strong>&lt;a&gt;</strong>,
+      <strong>&lt;input&gt;</strong> and <strong>&lt;button&gt;</strong>. Even
+      <strong>&lt;div&gt;</strong> could be used, thought it should only be used where the user is
+      required to interact with that part of the website.
+    </p>
+    <p>
+      The button is initially set up with a .btn class, then a color is assigned using the standard
+      color names.
+    </p>
+    <ul>
+      <li>.btn-primary</li>
+      <li>.btn-secondary</li>
+      <li>.btn-success</li>
+      <li>.btn-info</li>
+      <li>.btn-warning</li>
+      <li>.btn-danger</li>
+      <li>.btn-dark</li>
+      <li>.btn-light</li>
+    </ul>
+    <p>
+      The color of the text inside the button is selected using the .text-* classes, which accept
+      the same standard Bootstrap color names.
+    </p>
+    <p>
+      In addtition to those, we have the .btn-link class, which make the buttons look like a
+      standard link - however, it is rarely used. The &lt;a&gt; element performs this action with
+      the same styling, though it is not a block element.
+    </p>
+
+    <button class="btn btn-primary" type="button">Primary</button>
+    <button class="btn btn-secondary" type="button">Secondary</button>
+    <button class="btn btn-success" type="button">Success</button>
+    <button class="btn btn-danger" type="button">Danger</button>
+    <button class="btn btn-warning" type="button">Warning</button>
+    <button class="btn btn-info" type="button">Info</button>
+    <button class="btn btn-light" type="button">Light</button>
+    <button class="btn btn-dark" type="button">Dark</button>
+    <button class="btn btn-link" type="button">Link</button>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <h2 class="display-2">Button Groups</h2>
+    <p>
+      We can group buttons together so that they form a united panel. This is useful when we want
+      controls or buttons presented as a choice rather than individual options.
+    </p>
+    <p>
+      The buttons are placed in a single div that is given the .btn-group class, then the buttons
+      are created as normal. Rather than being separated from one another, they appera side by side.
+    </p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="#">Left</a>
+      <a class="btn btn-success" href="#">Middle</a>
+      <a class="btn btn-warning" href="#">Right</a>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+     -->
+    <!-- Bootstrap 5 JS OFFLINE -->
+    <script src="../../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
