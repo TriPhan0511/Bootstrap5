@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles -->
+    <style>
+      body {
+        max-width: 95vw;
+        margin: 0 auto;
+      }
+    </style>
+
+    <title>List group</title>
+  </head>
+  <body>
+    <h1>List group</h1>
+    <p>
+      List groups are a flexible and powerful component for displaying a series of content. Modify
+      and extend them to support just about any content within.
+    </p>
+
+    <h2>Basic example</h2>
+    <p>
+      The most basic list group is an unordered list with list items and the proper classes. Build
+      upon it with the options that follow, or eith your own CSS as needed.
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group" style="width: 15rem">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">A fifth item</li>
+    </ul>
+
+    <h2 class="mt-5">Active items</h2>
+    <p>
+      Add <code>.active</code> to a <code>.list-group-item</code> to indicate the current active
+      selection.
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group" style="width: 15rem">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item active" aria-current="true">An active item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">A fift item</li>
+    </ul>
+
+    <h2 class="mt-5">Disabled items</h2>
+    <p>
+      Add <code>.disabled</code> to a <code>.list-group-item</code> to make it
+      <em>appear</em> disabled. Note that some elements woth <code>.disabled</code> will also
+      require custom Javascript to fully disable their click events (e.g., links).
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">A fifth item</li>
+    </ul>
+
+    <h2 class="mt-5">Links and buttons</h2>
+    <p>
+      Use <code>&lt;a&gt;</code>s or <code>&lt;button&gt;</code>s to create <em>actionable</em> list
+      group items with hover, disabled, and active states by adding
+      <code>.list-group-item-action</code>. We separte these pseudo-classes to ensure list groups
+      made of non-iterative elements (like <code>&lt;li&gt;</code>s or <code>&lt;div&gt;</code>s)
+      don't provide a click or tap affordance.
+    </p>
+    <p>
+      Be sure to <strong>not use the standard <code>.btn</code> classes here.</strong>
+    </p>
+
+    <!-- Example: -->
+    <div class="list-group" style="width: 15rem">
+      <a href="#" class="list-group-item list-group-item-action">The first link item</a>
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true"
+        >The current link item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action">The third link item</a>
+      <a href="#" class="list-group-item list-group-item-action">The fourth link item</a>
+      <a href="#" class="list-group-item list-group-item-action">The fifth link item</a>
+      <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true"
+        >The disabled link item</a
+      >
+    </div>
+
+    <p class="mt-5">
+      With <code>&lt;button&gt;</code>s, you can make use of the disabled attribute instead of the
+      <code>.disabled</code> class. Sadly, <code>&lt;a&gt;</code>s don't support the diabled
+      attribute.
+    </p>
+
+    <!-- Example: -->
+
+    <div class="list-group" style="width: 15rem">
+      <button type="button" class="list-group-item list-group-item-action">The first item</button>
+      <button
+        type="button"
+        class="list-group-item list-group-item-action active"
+        aria-current="true"
+      >
+        The current item
+      </button>
+      <button type="button" class="list-group-item list-group-item-action">The third item</button>
+      <button type="button" class="list-group-item list-group-item-action">The fourth item</button>
+      <button type="button" class="list-group-item list-group-item-action">The fifth item</button>
+      <button type="button" class="list-group-item list-group-item-action" disabled>
+        The disabled item
+      </button>
+    </div>
+
+    <h2 class="mt-5">Flush</h2>
+    <p>
+      Add <code>.list-group-flush</code> to remove some borders and rounded corners to render list
+      group items edge-to-edge in a parent container (e.g., cards)
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group list-group-flush" style="width: 15rem">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">A fifth item</li>
+    </ul>
+
+    <h2 class="mt-5">Numbered</h2>
+    <p>
+      Add <code>.list-group-numbered</code> modifier class (and optionally use an
+      <code>&lt;ol&gt;</code> element) to opt numbered list group items. Numbers are generated by
+      CSS (as opposed to a <code>&lt;ol&gt;</code>s default browser styling) for better placement
+      inside list group items and to allow for better customization.
+    </p>
+    <p>
+      Numbers are generated by <code>counter-reset</code> on the <code>&lt;ol&gt;</code>, and then
+      styled and placed with <code>::before</code> pseudo-element on the
+      <code>&lt;li&gt;</code> with <code>counter-increment</code> and <code>content</code>.
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group list-group-numbered" style="width: 15rem">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+      <li class="list-group-item">A fourth item</li>
+      <li class="list-group-item">A fifth item</li>
+    </ul>
+
+    <p>These work great with custom content as well.</p>
+
+    <!-- Example: -->
+
+    <ol class="list-group list-group-numbered" style="width: 25rem">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Subheading</div>
+          Cras justo idio
+        </div>
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Subheading</div>
+          Cras justo idio
+        </div>
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Subheading</div>
+          Cras justo idio
+        </div>
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+    </ol>
+
+    <h2 class="mt-5">Horizontal</h2>
+    <p>
+      Add <code>.list-group-horizontal</code> to change the layout of list group items from vertical
+      to horizontal across all breakpoints. Alternatively, choose a repsonse variant
+      <code>.list-group-horizontal-{sm|md|lg|xl|xxl}</code> to make a list group horizontal starting
+      at that breakpoint's min-width. Currently
+      <strong>horizontal list groups cannot be combined with flush list groups.</strong>
+    </p>
+    <p>
+      <strong>ProTip:</strong> Want equal-width lsi group items when horizontal? Add
+      <code>.flex-fill</code> to each list group item.
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal-sm mt-3">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal-md mt-3">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal-lg mt-3">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal-xl mt-3">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal-xxl mt-3">
+      <li class="list-group-item">A first item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+
+    <h2 class="mt-5">Contextual classes</h2>
+    <p>Use contextual classes to style list items with a stateful background and color</p>
+
+    <!-- Example: -->
+
+    <ul class="list-group">
+      <li class="list-group-item">A simple default list group item</li>
+
+      <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+      <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+      <li class="list-group-item list-group-item-info">A simple info list group item</li>
+      <li class="list-group-item list-group-item-success">A simple success list group item</li>
+      <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+      <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+      <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+      <li class="list-group-item list-group-item-light">A simple light list group item</li>
+    </ul>
+
+    <p class="mt-5">
+      Contextual classes work with <code>.list-group-item-action</code>. Note the addition of the
+      hover styles here not present in the previous example. Also supported is the
+      <code>.active</code> state; apply it into indicate an active selection on a contextual list
+      group item.
+    </p>
+
+    <!-- Example: -->
+
+    <div class="list-group" style="width: 20rem">
+      <a href="#" class="list-group-item list-group-item-action"
+        >A simple default list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-primary"
+        >A simple primary list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"
+        >A simple secondary list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-info"
+        >A simple info list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-success"
+        >A simple success list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-warning"
+        >A simple warning list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-danger"
+        >A simple danger list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-dark"
+        >A simple dark list group item</a
+      >
+      <a href="#" class="list-group-item list-group-item-action list-group-item-light"
+        >A simple light list group item</a
+      >
+    </div>
+
+    <h2 class="mt-5">With badges</h2>
+
+    <!-- Example: -->
+
+    <ul class="list-group" style="width: 20rem">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A list item
+        <span class="badge bg-primary rounded-pill">1</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A second list item
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A tird list item
+        <span class="badge bg-primary rounded-pill">10</span>
+      </li>
+    </ul>
+
+    <h2 class="mt-5">Custom content</h2>
+    <p>
+      Add nearly any HTML within, even for linked list groups like the one below, with the help of
+      flexbox utilities.
+    </p>
+
+    <!-- Example: -->
+
+    <!-- <ul class="list-group" style="width: 25rem">
+      <li class="list-group-item">
+        <div class="d-flex">
+          <h5>List group item heading</h5>
+          <span>3 days ago</span>
+        </div>
+      </li>
+    </ul> -->
+
+    <div class="list-group" style="width: 25rem">
+      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+        <div class="d-flex justify-content-between">
+          <h5>List group item heading</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Some placholder content in a paragraph.</p>
+        <small>And some small print.</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex justify-content-between">
+          <h5>List group item heading</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Some placholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <div class="d-flex justify-content-between">
+          <h5>List group item heading</h5>
+          <small>3 days ago</small>
+        </div>
+        <p class="mb-1">Some placholder content in a paragraph.</p>
+        <small class="text-muted">And some muted small print.</small>
+      </a>
+    </div>
+
+    <h2 class="mt-5">Checkboxes and radios</h2>
+    <p>
+      Place Bootstrap's checkboxes and radios within list group items and customize as needed. You
+      can use them without <code>&lt;label&gt;</code>s, but please remember to include an
+      <code>aria-label</code> attribute and value for accessibility.
+    </p>
+
+    <!-- Example: -->
+
+    <ul class="list-group" style="width: 20rem">
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> First
+        checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Second
+        checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Third
+        checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Fourth
+        checkbox
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Fifth
+        checkbox
+      </li>
+    </ul>
+
+    <p class="mt-3">
+      And if you want <code>&lt;label&gt;</code>s as the <code>.list-group-item</code> for large hit
+      area, you can do that, too.
+    </p>
+
+    <!-- Example: -->
+
+    <div class="list-group" style="width: 20rem">
+      <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> First
+        checkbox
+      </label>
+      <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Second
+        checkbox
+      </label>
+      <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Third
+        checkbox
+      </label>
+      <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Fourth
+        checkbox
+      </label>
+      <label class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." /> Fifth
+        checkbox
+      </label>
+    </div>
+
+    <h2 class="mt-5">Javascript behavior</h2>
+    <p>
+      Use the tab Javascript plugin - include it individualy or through the compiled
+      <code>bootstrap.js</code> file - to extend our list group to create tabbable panes of local
+      content.
+    </p>
+
+    <!-- Example: -->
+
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tabe" role="tablist">
+          <a
+            href="#list-home"
+            class="list-group-item list-group-item-action active"
+            id="list-home-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-home"
+            >Home</a
+          >
+          <a
+            href="#list-profile"
+            class="list-group-item list-group-item-action"
+            id="list-profile-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-profile"
+            >Profile</a
+          >
+          <a
+            href="#list-messages"
+            class="list-group-item list-group-item-action"
+            id="list-messages-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-messages"
+            >Messages</a
+          >
+          <a
+            href="#list-settings"
+            class="list-group-item list-group-item-action"
+            id="list-settings-list"
+            data-bs-toggle="list"
+            role="tab"
+            aria-controls="list-settings"
+            >Settings</a
+          >
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="list-home"
+            role="tabpanel"
+            aria-labelledby="list-home-list"
+          >
+            <p>
+              Some placeholder content in a paragraph relating to "Home". And some more content,
+              used here to pad out and fill this tab panel. In production, you would obviously have
+              more real content here. And not just text. It could be anything, really. Text, images,
+              forms.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-profile"
+            role="tabpanel"
+            aria-labelledby="list-profile-list"
+          >
+            <p>
+              Some placeholder content in a paragraph relating to "Profile". And some more content,
+              used here to pad out and fill this tab panel. In production, you would obviously have
+              more real content here. And not just text. It could be anything, really. Text, images,
+              forms.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-messages"
+            role="tabpanel"
+            aria-labelledby="list-messages-list"
+          >
+            <p>
+              Some placeholder content in a paragraph relating to "Messages". And some more content,
+              used here to pad out and fill this tab panel. In production, you would obviously have
+              more real content here. And not just text. It could be anything, really. Text, images,
+              forms.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="list-settings"
+            role="tabpanel"
+            aria-labelledby="list-settings-list"
+          >
+            <p>
+              Some placeholder content in a paragraph relating to "Settings". And some more content,
+              used here to pad out and fill this tab panel. In production, you would obviously have
+              more real content here. And not just text. It could be anything, really. Text, images,
+              forms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-5"></h2>
+
+    <div style="height: 70vh"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
